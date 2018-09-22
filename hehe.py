@@ -118,9 +118,8 @@ def sendMessageWithMention(to, mid):
     except Exception as error:
         logError(error)
 
-Helpz ="""    Bacot yang help
-... 
-... 
+Helpz ="""    Kontol
+
 """
 
 Profilez ="""    「 ProfileSteal 」
@@ -185,7 +184,7 @@ def lineBot(op):
             print ("[ 24 ] Keluar Grup")
             if settings["autoLeave"] == True:
                 puy.leaveRoom(op.param1)
-        if op.type == 26:
+        if op.type in [25,26]: #25UntukSb
             print ("[ 25 ] Mengirim Pesan")
             msg = op.message
             text = msg.text
