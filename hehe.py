@@ -12,7 +12,7 @@ from googletrans import Translator
 botStart = time.time()
 
 #puy = LINE()
-puy = LINE("EwuhZA80qfu0xweF11r3.Ri4/RX6YPvDWVXddSJv8mW.HRsSRNLX3CsPphvlDT/Faa55haNUr2qw7CmW8SYAZt8=")
+puy = LINE("ExMPQHdeEmnsqYfruASf.g17Y57nD5k9pe4OxF95MlW.LLWnpfEK1QEcCL7SSP2HoOatcxp4ebPW/ey028qySOE=")
 #EwuhZA80qfu0xweF11r3.Ri4/RX6YPvDWVXddSJv8mW.HRsSRNLX3CsPphvlDT/Faa55haNUr2qw7CmW8SYAZt8= #IOSIPAD
 #EwQwIzlS11Z27NBxeWe3.Ri4/RX6YPvDWVXddSJv8mW.sHMeFhhrCB4eDVPAPF0LwxKxJH6SNTYvtBO2uXW9bnE= #CHROME
 #puy = LINE("Email","Password")
@@ -118,11 +118,14 @@ def sendMessageWithMention(to, mid):
     except Exception as error:
         logError(error)
 
-Helpz ="""    「 Commands 」
-Gsteal
-Psteal"""
+Helpz ="""    「 Detail Help 」
+
+Creator : Aked
+Login Status : Susscess!
+"""
 
 Profilez ="""    「 ProfileSteal 」
+
 Type: Steal Profile
 
   1. Picture
@@ -136,6 +139,7 @@ Penggunaan: Psteal 「nomor」 「Mention」
 Contoh: Psteal 1 @"""
 
 Gprofilez ="""    「 GroupSteal 」
+
 Type: Steal Group Information
 
   1. Foto Grup
@@ -149,6 +153,7 @@ Penggunaan: Gsteal 「nomor」
 Contoh: Gsteal 1"""
 
 Remotez ="""    「 RemoteCmd 」
+
 Type: Remote Controls Command
 
  1. Bukaqr
@@ -181,7 +186,7 @@ def lineBot(op):
             print ("[ 24 ] Keluar Grup")
             if settings["autoLeave"] == True:
                 puy.leaveRoom(op.param1)
-        if op.type == 25:
+        if op.type in [26, 25]:
             print ("[ 25 ] Mengirim Pesan")
             msg = op.message
             text = msg.text
@@ -204,17 +209,17 @@ def lineBot(op):
                     puy.sendMessage(to, str(Helpz))
                     #puy.sendContact(to, "u14f64e139a3817afaabe27d237afb36b")
 
-                if text.lower() == 'psteal':
+                if text.lower() == 'sempak1':
                     #helpMessage = helpmessage()
                     puy.sendMessage(to, str(Profilez))
                     #puy.sendContact(to, "u14f64e139a3817afaabe27d237afb36b")
 
-                if text.lower() == 'gsteal':
+                if text.lower() == 'sempak2':
                     #helpMessage = helpmessage()
                     puy.sendMessage(to, str(Gprofilez))
                     #puy.sendContact(to, "u14f64e139a3817afaabe27d237afb36b")
 
-                if text.lower() == 'rcontrol':
+                if text.lower() == 'sempak3':
                     #helpMessage = helpmessage()
                     puy.sendMessage(to, str(Remotez))
                     #puy.sendContact(to, "u14f64e139a3817afaabe27d237afb36b")
