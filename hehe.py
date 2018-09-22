@@ -119,6 +119,8 @@ def sendMessageWithMention(to, mid):
         logError(error)
 
 Helpz ="""    Bacot yang help
+... 
+... 
 """
 
 Profilez ="""    「 ProfileSteal 」
@@ -183,7 +185,7 @@ def lineBot(op):
             print ("[ 24 ] Keluar Grup")
             if settings["autoLeave"] == True:
                 puy.leaveRoom(op.param1)
-        if op.type == 25:
+        if op.type == 26:
             print ("[ 25 ] Mengirim Pesan")
             msg = op.message
             text = msg.text
@@ -280,7 +282,7 @@ def lineBot(op):
                             ret_ += "\n   「 {} Groups 」".format(str(len(groups)))
                             puy.sendMessage(to, str(ret_))
 
-                elif text.lower() == "byeme":
+                elif text.lower() == "gua keluar":
                     ginfo = puy.getGroup(to)
                     puy.sendMessage(to, "dadah {}".format(str(ginfo.name)))
                     puy.leaveGroup(to)
