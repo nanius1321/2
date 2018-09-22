@@ -11,8 +11,8 @@ from googletrans import Translator
 #==============================================================================#
 botStart = time.time()
 
-puy = LINE()
-#puy = LINE("ExMPQHdeEmnsqYfruASf.g17Y57nD5k9pe4OxF95MlW.LLWnpfEK1QEcCL7SSP2HoOatcxp4ebPW/ey028qySOE=")
+#puy = LINE()
+puy = LINE("Ex1dvBJQIhpFgIgcTS3f.g17Y57nD5k9pe4OxF95MlW.ZsrcvPgjm+/rjoaSI0Tx5995Wykti4U8J84H+GAPPvM=")
 #EwuhZA80qfu0xweF11r3.Ri4/RX6YPvDWVXddSJv8mW.HRsSRNLX3CsPphvlDT/Faa55haNUr2qw7CmW8SYAZt8= #IOSIPAD
 #EwQwIzlS11Z27NBxeWe3.Ri4/RX6YPvDWVXddSJv8mW.sHMeFhhrCB4eDVPAPF0LwxKxJH6SNTYvtBO2uXW9bnE= #CHROME
 #puy = LINE("Email","Password")
